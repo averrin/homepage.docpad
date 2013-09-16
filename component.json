@@ -2,6 +2,7 @@
   "name": "hompage.docpad",
   "dependencies": {
     "jquery": "latest",
+    "uikit": "latest",
     "underscore": "latest"
   }
 }
