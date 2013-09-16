@@ -1,0 +1,15 @@
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+- styles.add(['/assets/css/main.css'])
+- scripts.add(['/assets/vendor/jquery/jquery.min.js', '/assets/vendor/underscore/underscore-min.js'])
+
+doctype 5
+html
+    head
+        meta(charset='utf-8')
+        != getBlock("meta").toHTML()
+        != styles.toHTML()
+    body
+        .page-content!= content
+
+        != scripts.toHTML()
